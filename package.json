@@ -1,0 +1,47 @@
+{
+  "name": "gitset-desktop",
+  "version": "1.6.0",
+  "description": "Gitset - Advanced AI-Driven GitHub Tools Suite.",
+  "main": "main.js",
+  "author": {
+    "name": "Gitset Team",
+    "email": "support@gitset.dev"
+  },
+  "homepage": "https://gitset.dev",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --linux",
+    "build:mac": "electron-builder build --mac",
+    "build:win": "electron-builder build --win",
+    "build:linux": "electron-builder build --linux"
+  },
+  "build": {
+    "appId": "com.gitset.app",
+    "productName": "GitSet",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "build/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app.category.developer-tools",
+      "target": ["dmg"]
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "build/icons/icon.ico"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Development",
+      "icon": "build/icons/512x512.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^24.9.1"
+  }
+}
