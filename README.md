@@ -4,7 +4,7 @@
     </a>
     <br>
     <a href="https://github.com/gitset-dev/gitset-desktop" target="_blank">
-        <img src="https://img.shields.io/github/v/release/imprvhub/gitset-desktop?color=%237BFEF5" alt="version" />
+        <img src="https://img.shields.io/static/v1?label=version&message=v1.6.0&color=7BFEF5" alt="version" />
     </a>
 </div>
 
