@@ -67,13 +67,13 @@ function createWindow() {
 
   template.push(
     {
-      label: 'Archivo',
+      label: 'File',
       submenu: [
         isMac ? { role: 'close' } : { role: 'quit' }
       ]
     },
     {
-      label: 'Editar',
+      label: 'Edit',
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -84,7 +84,7 @@ function createWindow() {
       ]
     },
     {
-      label: 'Ver',
+      label: 'View',
       submenu: [
         { role: 'reload' },
         { role: 'toggleDevTools' },

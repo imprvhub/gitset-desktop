@@ -11,26 +11,26 @@
 <div align="center">
     <h3>
         <a href="https://gitset.dev" target="_blank">
-            GitSet Desktop - Cross-Platform Desktop Application
+            Gitset Desktop - Cross-Platform Desktop Application
         </a>
     </h3>
 </div>
 
 <hr>
 
-**GitSet Desktop** is the official cross-platform desktop application for [GitSet.dev](https://gitset.dev) - an advanced AI-driven GitHub tools suite. This electron-based application provides a dedicated desktop experience across macOS, Windows, and Linux systems, allowing users to access all GitSet features in a native application environment.
+**Gitset Desktop** is the official cross-platform desktop application for [Gitset.dev](https://gitset.dev) - an advanced AI-driven GitHub tools suite. This electron-based application provides a dedicated desktop experience across macOS, Windows, and Linux systems, allowing users to access all Gitset features in a native application environment.
 
 ## Features
 
 - **Cross-Platform Support**: Runs natively on macOS, Windows, and Linux
-- **Seamless Integration**: Provides the complete GitSet.dev experience in a dedicated desktop environment
+- **Seamless Integration**: Provides the complete Gitset.dev experience in a dedicated desktop environment
 - **Custom Window Controls**: Platform-specific window controls for a native experience
 - **Offline Capability**: Access to cached content even when offline
 - **System Integration**: Native notifications and system tray integration
 
 ## Technical Architecture
 
-GitSet Desktop is built with Electron, providing a consistent experience across all supported platforms while maintaining native OS integrations. The application wraps the GitSet.dev web application in a desktop environment, with custom window management and menu options.
+Gitset Desktop is built with Electron, providing a consistent experience across all supported platforms while maintaining native OS integrations. The application wraps the Gitset.dev web application in a desktop environment, with custom window management and menu options.
 
 ```
 ├── main.js              # Main electron process
@@ -99,12 +99,12 @@ The application is configured to provide native-like experience on each platform
 | Linux    | Ubuntu 18.04+, Fedora 30+, etc.  |
 
 ## Versioning
-GitSet Desktop maintains version parity with the web application, with both platforms sharing the same version numbers in most releases. This parallel versioning strategy is possible because the desktop application primarily serves as a wrapper for the web app with minimal platform-specific modifications. Any divergence in version numbers typically indicates desktop-specific enhancements or platform optimizations.
+Gitset Desktop maintains version parity with the web application, with both platforms sharing the same version numbers in most releases. This parallel versioning strategy is possible because the desktop application primarily serves as a wrapper for the web app with minimal platform-specific modifications. Any divergence in version numbers typically indicates desktop-specific enhancements or platform optimizations.
 
 ## Related Projects
 
-- [GitSet](https://github.com/imprvhub/gitset) - The main GitSet.dev web application
-- [GitSet CLI](https://github.com/gitset-dev/gitset-cli) - Command-line interface for GitSet services
+- [Gitset](https://github.com/imprvhub/gitset) - The main Gitset.dev web application
+- [Gitset CLI](https://github.com/gitset-dev/gitset-cli) - Command-line interface for Gitset services
 
 ## Contributing
 
@@ -116,4 +116,4 @@ GitSet Desktop maintains version parity with the web application, with both plat
 
 ## License
 
-For more information regarding licensing please read the [Terms and Conditions](https://gitset.dev/terms) on the GitSet website.
+For more information regarding licensing please read the [Terms and Conditions](https://gitset.dev/terms) on the Gitset website.

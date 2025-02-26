@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "com.gitset.app",
-    "productName": "GitSet",
+    "productName": "Gitset",
     "directories": {
       "output": "dist"
     },
