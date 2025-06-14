@@ -4,7 +4,7 @@
     </a>
     <br>
     <a href="https://github.com/gitset-dev/gitset-desktop" target="_blank">
-        <img src="https://img.shields.io/static/v1?label=version&message=v1.6.0&color=7BFEF5" alt="version" />
+        <img src="https://img.shields.io/static/v1?label=version&message=v1.9.0&color=7BFEF5" alt="version" />
     </a>
 </div>
 
@@ -18,19 +18,19 @@
 
 <hr>
 
-**Gitset Desktop** is the official cross-platform desktop application for [Gitset.dev](https://gitset.dev) - an advanced AI-driven GitHub tools suite. This electron-based application provides a dedicated desktop experience across macOS, Windows, and Linux systems, allowing users to access all Gitset features in a native application environment.
+**Gitset Desktop** is the official cross-platform desktop application for [Gitset.dev](https://gitset.dev) - an advanced AI-driven GitHub tools suite. This Electron-based application provides a dedicated desktop experience across macOS, Windows, and Linux systems, allowing users to access all Gitset features in a native application environment with seamless token synchronization.
 
-## Features
+### Features
 
 - **Cross-Platform Support**: Runs natively on macOS, Windows, and Linux
 - **Seamless Integration**: Provides the complete Gitset.dev experience in a dedicated desktop environment
-- **Custom Window Controls**: Platform-specific window controls for a native experience
-- **Offline Capability**: Access to cached content even when offline
-- **System Integration**: Native notifications and system tray integration
+- **Native Window Controls**: Platform-specific window controls with proper drag and resize functionality
+- **Shared Token System**: Synchronized token usage with the web application across all platforms
+- **System Integration**: Native notifications and platform-optimized interface
 
-## Technical Architecture
+### Technical Architecture
 
-Gitset Desktop is built with Electron, providing a consistent experience across all supported platforms while maintaining native OS integrations. The application wraps the Gitset.dev web application in a desktop environment, with custom window management and menu options.
+Gitset Desktop is built with Electron, providing a consistent experience across all supported platforms while maintaining native OS integrations. The application wraps the Gitset.dev web application in a desktop environment with optimized performance.
 
 ```
 ├── main.js              # Main electron process
@@ -39,14 +39,14 @@ Gitset Desktop is built with Electron, providing a consistent experience across 
     └── icons/           # Application icons for different platforms
 ```
 
-## Installation
+### Installation
 
-### Prerequisites
+#### Prerequisites
 
 - Node.js (v16.x or later)
 - npm (v7.x or later)
 
-### Development Setup
+#### Development Setup
 
 1. Clone the repository:
    ```bash
@@ -54,8 +54,17 @@ Gitset Desktop is built with Electron, providing a consistent experience across 
    cd gitset-desktop
    ```
 
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Building Installers
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+#### Building Installers
 
 To build installers for all supported platforms:
 
@@ -71,26 +80,26 @@ npm run build:win    # For Windows
 npm run build:linux  # For Linux
 ```
 
-## Technical Configuration
+### Platform Configuration
 
 The application is configured to provide native-like experience on each platform:
 
-### macOS
-- Uses `hiddenInset` title bar style for a more integrated experience
-- Includes standard macOS application menu structure
+#### macOS
+- Native title bar with proper drag functionality
+- Standard macOS application menu structure
 - Builds DMG installer
 
-### Windows
-- Uses custom application icon
-- Includes standard application menus
+#### Windows
+- Custom application icon and window controls
+- Standard application menus
 - Builds NSIS installer
 
-### Linux
+#### Linux
 - Supports AppImage and DEB package formats
-- Includes standard menu structure
+- Standard menu structure
 - Categorized as Development tool in application launchers
 
-## Platform Compatibility
+### Platform Compatibility
 
 | Platform | Supported Versions                |
 |----------|-----------------------------------|
@@ -98,15 +107,16 @@ The application is configured to provide native-like experience on each platform
 | Windows  | Windows 10, Windows 11           |
 | Linux    | Ubuntu 18.04+, Fedora 30+, etc.  |
 
-## Versioning
-Gitset Desktop maintains version parity with the web application, with both platforms sharing the same version numbers in most releases. This parallel versioning strategy is possible because the desktop application primarily serves as a wrapper for the web app with minimal platform-specific modifications. Any divergence in version numbers typically indicates desktop-specific enhancements or platform optimizations.
+### Versioning Strategy
 
-## Related Projects
+Gitset Desktop maintains version parity with the web application, ensuring feature consistency across platforms. The desktop application serves as a native wrapper for the web platform with optimized window management and system integration. Version updates are released concurrently to maintain synchronized functionality and token system compatibility.
+
+### Related Projects
 
 - [Gitset](https://github.com/imprvhub/gitset) - The main Gitset.dev web application
-- [Gitset CLI](https://github.com/gitset-dev/gitset-cli) - Command-line interface for Gitset services
+- [Gitset MCP Agent](https://github.com/gitset-dev/gitset-mcp) - Model Context Protocol agent for terminal and IDE integration (in development)
 
-## Contributing
+### Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -114,6 +124,6 @@ Gitset Desktop maintains version parity with the web application, with both plat
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+### License
 
 For more information regarding licensing please read the [Terms and Conditions](https://gitset.dev/terms) on the Gitset website.
