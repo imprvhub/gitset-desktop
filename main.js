@@ -14,6 +14,7 @@ function createWindow() {
     width: 1200,
     height: 800,
     resizable: true,
+    movable: true,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true
@@ -23,7 +24,7 @@ function createWindow() {
   };
 
   if (isMac) {
-    windowConfig.titleBarStyle = 'hiddenInset';
+    windowConfig.titleBarStyle = 'default';
   }
 
   if (isWindows) {
